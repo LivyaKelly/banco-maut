@@ -53,11 +53,15 @@ public class App {
         var.nextLine();
     
         Conta conta = new Conta(numeroAgencia, cliente, 0.0);
+        Conta conta1 = new Conta(numeroAgencia, cliente, 0.0);
+        conta.depositar(100);
+        conta.saque(50);
+        //conta.transferencia(100, contaDestino);
     
         clientes.add(cliente);
-        System.out.println("Cliente e conta cadastrados com sucesso!");
+        System.out.println("\nCliente e conta cadastrados com sucesso!");
         contas.add(conta);
-        System.out.println("Segue seus dados de cadastro: ");
+        System.out.println("\nSegue seus dados de cadastro: ");
         System.out.println("Nome: " + cliente.getNome());
         System.out.println("CPF: " + cliente.getCpf());
         System.out.println("Data de nascimento: " + cliente.getDn());
@@ -70,3 +74,5 @@ public class App {
         System.out.println("Saldo: " + conta.getSaldo());
     }
 }
+
+// Comitado

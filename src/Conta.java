@@ -1,8 +1,11 @@
+import java.util.List;
+
 public class Conta {
     private int numberAgency;
     private int numeroConta = 1;
     private double saldo = 0.0;
     private Client client;
+    List<Transacao> transacoes;
 
     public Conta(int numberAgency, Client client, double saldo) {
         this.numberAgency = numberAgency;
